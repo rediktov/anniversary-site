@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С годовщиной,моя маленькая ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Музыкальный плеер -->
+<div class="music-player" id="musicPlayer">
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-btn" id="musicBtn" aria-label="Включить музыку">
+    <span class="music-icon">▶</span>
+  </button>
+  <div class="music-info">
+    <span class="music-title">Наша песня</span>
+    <div class="music-wave">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</div>
+  <!-- Падающие сердечки -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtitle">С годовщиной, любимая</p>
+      <h1 class="title">Наша история</h1>
+      <p class="date" id="dateCounter">Мы вместе уже ...</p>
+      <button class="btn" onclick="scrollToGallery()">Открыть наши моменты 💌</button>
+    </div>
+  </section>
+
+  <!-- Поздравление -->
+  <section class="letter">
+  <div class="letter-content">
+    <h2>Моё письмо тебе</h2>
+    <p class="letter-text">
+      Сашуля, моя любимая, моя маленькая, моя дорогая...
+      <br><br>
+      Семь лет назад, ещё совсем детьми, мы сидели за одной партой в школе 
+      и даже не подозревали, что эта встреча — на всю жизнь. 
+      А сегодня нам по двадцать, и я люблю тебя в тысячу раз сильнее, 
+      чем в тот самый первый день.
+      <br><br>
+      Ты — моё утро, мой смех, мой дом. Ты — человек, рядом с которым 
+      я становлюсь лучше. Я люблю в тебе всё: твою улыбку, твой голос, 
+      твои глаза, твои капризы и твою нежность.
+      <br><br>
+      Спасибо, что ты выбрала меня. Спасибо, что ты рядом. 
+      Спасибо за каждый день нашей истории.
+      <br><br>
+      С годовщиной, моя родная. Я люблю тебя больше жизни. ❤️
+    </p>
+    <p class="signature">— Твой навсегда</p>
+  </div>
+</section>
+
+  <!-- Галерея -->
+  <section class="gallery" id="gallery">
+    <h2>Наши моменты</h2>
+    <div class="gallery-grid">
+      <div class="photo"><img src="photos/1.jpg" alt=""></div>
+      <div class="photo"><img src="photos/2.jpg" alt=""></div>
+      <div class="photo"><img src="photos/3.jpg" alt=""></div>
+      <div class="photo"><img src="photos/4.jpg" alt=""></div>
+      <div class="photo"><img src="photos/5.jpg" alt=""></div>
+      <div class="photo"><img src="photos/6.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <!-- Финал -->
+  <section class="finale">
+    <h2>Я тебя люблю ❤️</h2>
+    <p>Ты самое дорогое,что у меня есть.Ты моя мотивация просыпаться</p>
+    <button class="btn" onclick="showSurprise()">Нажми меня 🎁</button>
+    <div class="surprise" id="surprise">
+      <p>Ты — самое лучшее, что случилось со мной. Спасибо, что ты есть. ✨</p>
+    </div>
+  </section>
+
+  <!-- Модалка для фото -->
+  <div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
